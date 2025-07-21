@@ -45,7 +45,8 @@ const portfolioItems = [
   },
 ];
 
-const PortfolioCard = memo(({ title, type, description, image, href }) => (
+const PortfolioCard = memo(({ title, type, description, image, href }) => (,
+  <a href={href} target="_blank" rel="noopener noreferrer"> 
   <div className="group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
     <div className="relative h-56 overflow-hidden">
       <img
@@ -68,6 +69,8 @@ const PortfolioCard = memo(({ title, type, description, image, href }) => (
       </a>
     </div>
   </div>
+  </a>
+
 ));
 
 export function Portfolio() {
