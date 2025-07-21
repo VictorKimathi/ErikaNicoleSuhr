@@ -17,7 +17,7 @@ export function About() {
             </p>
           </div>
           <div className="relative h-[400px]">
-            <img src="https://images.unsplash.com/photo-1573497161161-c3e73707e25c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="Professional portrait of Erika Nicole Suhr" className="w-full h-full object-cover" />
+            <img src="https://www.pexels.com/photo/shallow-focus-photo-of-a-woman-in-blue-sleeveless-top-948875/" alt="Professional portrait of Erika Nicole Suhr" className="w-full h-full object-cover" />
           </div>
         </div>
       </Section>
