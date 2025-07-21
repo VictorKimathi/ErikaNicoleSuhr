@@ -3,7 +3,6 @@ import { Section } from '../components/Section';
 import { Button } from '../components/Button';
 import { ArrowRight, ExternalLink } from 'lucide-react';
 
-// Portfolio data
 const categories = [
   'All',
   'Long-form Articles',
@@ -45,32 +44,28 @@ const portfolioItems = [
   },
 ];
 
-const PortfolioCard = memo(({ title, type, description, image, href }) => (,
-  <a href={href} target="_blank" rel="noopener noreferrer"> 
-  <div className="group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-    <div className="relative h-56 overflow-hidden">
-      <img
-        src={image}
-        alt={title}
-        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-      />
+const PortfolioCard = memo(({ title, type, description, image, href }) => (
+  <a href={href} target="_blank" rel="noopener noreferrer">
+    <div className="group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+      <div className="relative h-56 overflow-hidden">
+        <img
+          src={image}
+          alt={title}
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+      </div>
+      <div className="p-6">
+        <span className="text-sm text-gray-500">{type}</span>
+        <h3 className="text-xl font-medium mt-2 mb-3">{title}</h3>
+        <p className="text-gray-600 mb-4">{description}</p>
+        <span
+          className="inline-flex items-center text-teal-700 font-medium hover:text-teal-800 transition-colors"
+        >
+          Read Article <ExternalLink size={16} className="ml-2" />
+        </span>
+      </div>
     </div>
-    <div className="p-6">
-      <span className="text-sm text-gray-500">{type}</span>
-      <h3 className="text-xl font-medium mt-2 mb-3">{title}</h3>
-      <p className="text-gray-600 mb-4">{description}</p>
-      <a
-        href="https://erikasuhrwrites.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-flex items-center text-teal-700 font-medium hover:text-teal-800 transition-colors"
-      >
-        Read Article <ExternalLink size={16} className="ml-2" />
-      </a>
-    </div>
-  </div>
   </a>
-
 ));
 
 export function Portfolio() {
