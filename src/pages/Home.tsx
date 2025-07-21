@@ -5,25 +5,34 @@ import { Button } from '../components/Button';
 
 export function Home() {
   const services = [
-    {
-      title: '5 Clever Places in Your Home to Hide Water Leak Alarms',
-      type: 'Home Maintenance Guide',
-      description:
-        'Water damage doesn’t always begin with a burst pipe. It often starts with a slow, silent drip behind a wall, under an appliance, or beneath a sink, only becoming obvious once the damage is done...',
-      image:
-        'https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
-      href: '5_Clever_Places_in_Your_Home.pdf',
-    },
-    {
-      title: 'What Happens If You Don’t Ventilate Your Attic Properly',
-      type: 'Home Improvement & Energy Efficiency',
-      description:
-        'Attic ventilation plays a key role in maintaining a safe and efficient home, yet it’s often overlooked. Proper airflow regulates temperature, controls moisture, and prevents long-term damage...',
-      image:
-        'https://images.unsplash.com/photo-1560184897-ae75f418493e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
-      href: 'What_Happens_If_You_Don.pdf',
-    },
-  ];
+  {
+    title: 'What Happens If You Over-Rotate Your Vegetable Crops',
+    type: 'Gardening and Soil Health',
+    description:
+      'Crop rotation is widely regarded as one of the most effective strategies for maintaining a healthy vegetable garden...',
+    image:
+      'https://images.unsplash.com/photo-1484101403633-562f891dc89a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+    href: 'What_Happens_If_You_Over.pdf',
+  },
+  {
+    title: '5 Clever Places in Your Home to Hide Water Leak Alarms',
+    type: 'Home Maintenance Guide',
+    description:
+      'Water damage doesn’t always begin with a burst pipe. It often starts with a slow, silent drip behind a wall...',
+    image:
+      'https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+    href: '5_Clever_Places_in_Your_Home.pdf',
+  },
+  {
+    title: 'What Happens If You Don’t Ventilate Your Attic Properly',
+    type: 'Home Improvement & Energy Efficiency',
+    description:
+      'Attic ventilation plays a key role in maintaining a safe and efficient home, yet it’s often overlooked...',
+    image:
+      'https://images.unsplash.com/photo-1560184897-ae75f418493e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+    href: 'What_Happens_If_You_Don.pdf',
+  },
+];
 
   const portfolioItems = [
     {
