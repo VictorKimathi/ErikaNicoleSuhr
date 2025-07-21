@@ -6,53 +6,24 @@ export function Portfolio() {
   const categories = ['All', 'Long-form Articles', 'Product Roundups', 'DIY Guides', 'Seasonal Features'];
   const [activeCategory, setActiveCategory] = useState('All');
   const portfolioItems = [{
-    title: 'Small Space Organization Guide',
-    client: 'HomeHatch',
-    type: 'Long-form Articles',
-    description: 'A comprehensive guide to maximizing storage and functionality in apartments under 800 square feet.',
-    image: 'https://images.unsplash.com/photo-1484101403633-562f891dc89a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80'
+    title: 'What Happens If You Over-Rotate Your Vegetable Crops',
+    type: 'Gardening and Soil Health',
+    description: 'Crop rotation is widely regarded as one of the most effective strategies for maintaining a healthy vegetable garden. By moving crops between different areas each season, gardeners can disrupt pest and disease cycles, prevent nutrient depletion, and promote long-term soil vitality. ',
+    image: 'https://images.unsplash.com/photo-1484101403633-562f891dc89a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80',
+    href: 'What_Happens_If_You_Over.pdf'
   }, {
-    title: 'Sustainable Kitchen Essentials',
-    client: 'RemodelRevive',
-    type: 'Product Roundups',
-    description: 'A curated collection of eco-friendly kitchen tools and appliances for the environmentally conscious home cook.',
-    image: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80'
+    title: '5 Clever Places in Your Home to Hide Water Leak Alarms',
+    type: 'Home Maintenance Guide',
+    description: 'Water damage doesn’t always begin with a burst pipe. It often starts with a slow, silent drip behind a wall, under an appliance, or beneath a sink, only becoming obvious once the damage is done. Water leak alarms can catch these issues early, but to be effective, the sensor needs to sit close to potential leak sources, yet remain protected from interference.',
+    image: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80',
+    href: '5_Clever_Places_in_Your_Home.pdf'
   }, {
-    title: 'DIY Entryway Makeover',
-    client: 'DailyNest',
-    type: 'DIY Guides',
-    description: 'A step-by-step guide to transforming your entryway into a functional and welcoming space on a budget.',
-    image: 'https://images.unsplash.com/photo-1560184897-ae75f418493e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80'
-  }, {
-    title: 'Fall Home Refresh Ideas',
-    client: 'Cozy & Clever Media',
-    type: 'Seasonal Features',
-    description: 'Seasonal tips for bringing warmth and autumn charm into your home without a complete redesign.',
-    image: 'https://images.unsplash.com/photo-1508995476428-43d70c3d0042?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80'
-  }, {
-    title: 'Indoor Plant Care for Beginners',
-    client: 'HomeHatch',
-    type: 'Long-form Articles',
-    description: 'An extensive guide to selecting, caring for, and displaying indoor plants for plant novices.',
-    image: 'https://images.unsplash.com/photo-1545241047-6083a3684587?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80'
-  }, {
-    title: 'Budget-Friendly Bathroom Updates',
-    client: 'RemodelRevive',
-    type: 'DIY Guides',
-    description: 'Simple and affordable DIY projects to refresh your bathroom without a full renovation.',
-    image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80'
-  }, {
-    title: 'Winter Bedding Essentials',
-    client: 'DailyNest',
-    type: 'Product Roundups',
-    description: 'A selection of cozy, high-quality bedding products to create a warm and inviting winter bedroom.',
-    image: 'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80'
-  }, {
-    title: 'Holiday Entertaining Guide',
-    client: 'Cozy & Clever Media',
-    type: 'Seasonal Features',
-    description: 'Tips and ideas for hosting memorable holiday gatherings in spaces of all sizes.',
-    image: 'https://images.unsplash.com/photo-1482275548304-a58859dc31b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80'
+    title: 'What Happens If You Don’t Ventilate Your Attic Properly',
+    type: 'Home Improvement & Energy Efficiency',
+    description: 'Attic ventilation plays a key role in maintaining a safe and efficient home, yet it’s often overlooked. Proper airflow regulates temperature, controls moisture, and prevents long-term damage to insulation, roofing, and structural materials. Without it, heat and humidity can build up, leading to mold growth, wood rot, and higher energy costs.',
+    image: 'https://images.unsplash.com/photo-1560184897-ae75f418493e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80',
+    href: 'What_Happens_If_You_Don.pdf'
+  }
   }];
   const filteredItems = activeCategory === 'All' ? portfolioItems : portfolioItems.filter(item => item.type === activeCategory);
   return <div className="pt-16">
