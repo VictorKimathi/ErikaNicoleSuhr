@@ -51,19 +51,19 @@ export function Home() {
           What I Write
         </h2>
         <div className="grid md:grid-cols-3 gap-8">
-          {[{
-          title: 'Long-form Articles',
-          description: 'In-depth pieces that explore home design concepts, lifestyle trends, and practical living solutions.',
-          image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80'
-        }, {
-          title: 'Product Roundups',
-          description: 'Curated collections of home goods and lifestyle products with thoughtful commentary and recommendations.',
-          image: 'https://images.unsplash.com/photo-1551298370-9d3d53740c72?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80'
-        }, {
-          title: 'DIY & How-to Guides',
-          description: 'Step-by-step instructions and creative ideas to help readers improve their spaces and daily routines.',
-          image: 'https://images.unsplash.com/photo-1452860606245-08befc0ff44b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80'
-        }].map((service, index) => <div key={index} className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+          [{
+    title: '5 Clever Places in Your Home to Hide Water Leak Alarms',
+    type: 'Home Maintenance Guide',
+    description: 'Water damage doesn’t always begin with a burst pipe. It often starts with a slow, silent drip behind a wall, under an appliance, or beneath a sink, only becoming obvious once the damage is done. Water leak alarms can catch these issues early, but to be effective, the sensor needs to sit close to potential leak sources, yet remain protected from interference.',
+    image: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80',
+    href: '5_Clever_Places_in_Your_Home.pdf'
+  }, {
+    title: 'What Happens If You Don’t Ventilate Your Attic Properly',
+    type: 'Home Improvement & Energy Efficiency',
+    description: 'Attic ventilation plays a key role in maintaining a safe and efficient home, yet it’s often overlooked. Proper airflow regulates temperature, controls moisture, and prevents long-term damage to insulation, roofing, and structural materials. Without it, heat and humidity can build up, leading to mold growth, wood rot, and higher energy costs.',
+    image: 'https://images.unsplash.com/photo-1560184897-ae75f418493e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80',
+    href: 'What_Happens_If_You_Don.pdf'
+  }];.map((service, index) => <div key={index} className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
               <img src={service.image} alt={service.title} className="w-full h-48 object-cover" />
               <div className="p-6">
                 <h3 className="text-xl font-medium mb-2">{service.title}</h3>
