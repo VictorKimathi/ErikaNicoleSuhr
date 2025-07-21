@@ -110,6 +110,63 @@ export function Home() {
             </div>)}
         </div>
       </Section>
+            {/* Testimonials Section */}
+<section className="py-16 bg-white">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center mb-12">
+      <h2 className="text-3xl md:text-4xl font-bold text-forest mb-4">
+        What Clients Are Saying
+      </h2>
+      <p className="text-gray-700 max-w-2xl mx-auto">
+        Hear directly from those I've worked with — creators, publishers, and outdoor brands who trust my voice.
+      </p>
+    </div>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {/* Testimonial 1 */}
+      <div className="bg-cream rounded-lg shadow-md p-6 flex flex-col justify-between hover:shadow-lg transition-shadow">
+        <p className="text-gray-800 italic mb-4">
+          "An absolute pleasure to work with. Emmanuel turned complex outdoor topics into accessible, engaging reads our readers loved."
+        </p>
+        <div className="flex items-center">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client 1" className="w-12 h-12 rounded-full mr-4" />
+          <div>
+            <p className="font-bold text-forest">Samantha Green</p>
+            <p className="text-gray-600 text-sm">Editor, TrailMarked Magazine</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Testimonial 2 */}
+      <div className="bg-cream rounded-lg shadow-md p-6 flex flex-col justify-between hover:shadow-lg transition-shadow">
+        <p className="text-gray-800 italic mb-4">
+          "Her writing voice is warm and authentic, yet packed with useful insights. A perfect match for our sustainable living series."
+        </p>
+        <div className="flex items-center">
+          <img src="https://randomuser.me/api/portraits/men/36.jpg" alt="Client 2" className="w-12 h-12 rounded-full mr-4" />
+          <div>
+            <p className="font-bold text-forest">Daniel Kim</p>
+            <p className="text-gray-600 text-sm">Founder, EcoLiving Daily</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Testimonial 3 */}
+      <div className="bg-cream rounded-lg shadow-md p-6 flex flex-col justify-between hover:shadow-lg transition-shadow">
+        <p className="text-gray-800 italic mb-4">
+          "Reliable, creative, and deeply knowledgeable. Emmanuel brought a fresh and informative tone to our gardening series."
+        </p>
+        <div className="flex items-center">
+          <img src="https://randomuser.me/api/portraits/women/55.jpg" alt="Client 3" className="w-12 h-12 rounded-full mr-4" />
+          <div>
+            <p className="font-bold text-forest">Linda Chavez</p>
+            <p className="text-gray-600 text-sm">Content Director, The Spruce</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
       {/* CTA Section */}
       <Section bgColor="bg-teal-700" className="text-white">
         <div className="max-w-3xl mx-auto text-center space-y-6">
