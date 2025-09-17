@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Section } from '../components/Section';
 import { Button } from '../components/Button';
@@ -17,7 +18,7 @@ export function About() {
             </p>
           </div>
           <div className="relative h-[400px]">
-            <img src="./erika.jpg" className="w-full h-full object-cover" />
+            <img src="./Erika_Portfolio.jfif" className="w-full h-full object-cover" />
           </div>
         </div>
       </Section>
